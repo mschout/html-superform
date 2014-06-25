@@ -14,3 +14,5 @@ Revision history for HTML::SuperForm
      - Changed $VERSION to 1.04 so cpan shell will update
 1.05 - 2008-10-13
      - Added Apache2::Request support for getting parameters
+1.06 - 2009-10-16
+     - Added LICENSE file

@@ -4,7 +4,7 @@ use strict;
 use HTML::SuperForm::Field;
 use Carp;
 
-our $VERSION = 1.05;
+our $VERSION = 1.06;
 
 my %fields = map { $_ => 1 } qw(textarea text checkbox select radio checkbox_group radio_group password hidden submit);
 my %mutators    = map { $_ => 1 } qw(well_formed sticky fallback values_as_labels);
