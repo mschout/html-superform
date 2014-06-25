@@ -5,3 +5,5 @@ Revision history for HTML::SuperForm
      - pass an Apache::Request object to the
      - constructor and be able to get at the parameters
      - later.
+1.02 - 2004-09-25
+     - Field values are now html-escaped

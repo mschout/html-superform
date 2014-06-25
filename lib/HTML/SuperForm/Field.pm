@@ -124,6 +124,8 @@ sub new {
         $self->{_value} = $self->{_value}[$i];
     }
 
+    $self->{_value} = $self->escape_html($self->{_value});
+
     my @select = ();
     if(ref($self->{_value}) eq "ARRAY") {
         @select = @{$self->{_value}};
@@ -141,6 +143,24 @@ sub new {
     $self->update_form();
 
     return $self;
+}
+
+sub escape_html {
+    my $self = shift;
+    my $arg = shift;
+
+    if(ref($arg) eq "ARRAY") {
+        my $strings = $arg;
+        $arg = [];
+        for(0..$#$strings) {
+            $arg->[$_] = $strings->[$_];
+            $arg->[$_] =~ s/(["&<>])/'&#' . ord($1) . ';'/ge;
+        }
+    } else {
+        $arg =~ s/(["&<>])/'&#' . ord($1) . ';'/ge;
+    }
+
+    return $arg;
 }
 
 sub name {
