@@ -19,3 +19,5 @@ Revision history for HTML::SuperForm
 1.07 - 2009-10-17
      - Changed LICENSE file to be the same license as perl
      - Added COPYRIGHT section in documentation of HTML::SuperForm
+1.08 - 2009-10-19
+     - Added LICENSE => 'perl' in Makefile.PL
