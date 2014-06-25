@@ -1,0 +1,7 @@
+Revision history for HTML::SuperForm
+
+1.01 - 2004-09-07
+     - Fixed mistake which prevented the ability to
+     - pass an Apache::Request object to the
+     - constructor and be able to get at the parameters
+     - later.

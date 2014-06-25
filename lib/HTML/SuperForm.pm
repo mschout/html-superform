@@ -4,7 +4,7 @@ use strict;
 use HTML::SuperForm::Field;
 use Carp;
 
-our $VERSION = 1.0;
+our $VERSION = 1.01;
 
 my %fields = map { $_ => 1 } qw(textarea text checkbox select radio checkbox_group password hidden submit);
 my %mutators    = map { $_ => 1 } qw(well_formed sticky fallback values_as_labels);
@@ -21,7 +21,12 @@ sub new {
     my $parameters_from = '';
 
     if(UNIVERSAL::isa($arg, "Apache") && eval("require Apache::Request")) {
-        my $apr = Apache::Request->instance($arg);
+        my $apr;
+        if(UNIVERSAL::isa($arg, "Apache::Request")) {
+            $apr = $arg;
+        } else {
+            $apr = Apache::Request->instance($arg);
+        }
         my @ps = $apr->param();
         for my $p (@ps) {
             my @values = $apr->param($p);
