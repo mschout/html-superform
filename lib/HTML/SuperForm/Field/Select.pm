@@ -10,6 +10,8 @@ sub init {
     unless(exists($config->{label})) {
         $config->{label} = '';
     }
+
+    $self->{value_attributes} = delete $config->{value_attributes};
 }
 
 sub to_html {
@@ -22,6 +24,7 @@ sub to_html {
 
     for my $v (@{$self->values}) {
         $tag .= qq|    <option value="$v"|;
+        $tag .= $self->value_attribute_str($v),
         $tag .= $self->selected_str($v);
         $tag .= '>';
         $tag .= $self->label($v);
@@ -32,6 +35,15 @@ sub to_html {
     $tag = $self->label . " $tag" if $self->has_label();
 
     return $tag;
+}
+
+sub value_attribute_str {
+    my ($self, $v) = @_;
+
+    my $attr = $self->{value_attributes}{$v} or return;
+
+    return ' ' .
+        join(' ', map { qq|$_="$$attr{$_}"| } keys %$attr);
 }
 
 sub options_html {

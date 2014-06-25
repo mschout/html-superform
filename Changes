@@ -23,3 +23,5 @@ Revision history for HTML::SuperForm
      - Added LICENSE => 'perl' in Makefile.PL
 1.09 - 2009-10-20
      - Applied mschout's patch to give support for a reset button
+1.09_01 - 2014-05-17
+     - Allow value_attributes on select fields

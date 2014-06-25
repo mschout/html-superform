@@ -15,3 +15,5 @@ lib/HTML/SuperForm/Field/Select.pm
 lib/HTML/SuperForm/Field/Submit.pm
 lib/HTML/SuperForm/Field/Text.pm
 lib/HTML/SuperForm/Field/Textarea.pm
+META.yml                                 Module YAML meta-data (added by MakeMaker)
+META.json                                Module JSON meta-data (added by MakeMaker)
