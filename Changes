@@ -25,3 +25,5 @@ Revision history for HTML::SuperForm
      - Applied mschout's patch to give support for a reset button
 1.09_01 - 2014-05-17
      - Allow value_attributes on select fields
+1.09_02 - 2014-06-25
+     - Added disabled support to submit fields

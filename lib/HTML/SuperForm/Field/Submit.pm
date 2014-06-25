@@ -20,6 +20,7 @@ sub to_html {
     my $self = shift;
     my $tag = '<input type="submit"';
     $tag .= $self->attribute_str();
+    $tag .= $self->disabled_str();
     $tag .= ' value="';
     $tag .= $self->label();
     $tag .= '"';
