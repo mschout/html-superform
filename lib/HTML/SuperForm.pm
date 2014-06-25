@@ -4,7 +4,7 @@ use strict;
 use HTML::SuperForm::Field;
 use Carp;
 
-our $VERSION = 1.06;
+our $VERSION = 1.07;
 
 my %fields = map { $_ => 1 } qw(textarea text checkbox select radio checkbox_group radio_group password hidden submit);
 my %mutators    = map { $_ => 1 } qw(well_formed sticky fallback values_as_labels);
@@ -907,5 +907,11 @@ TODO
 =head1 AUTHOR
 
 John Allwine E<lt>jallwine86@yahoo.comE<gt>
+
+=head1 COPYRIGHT
+
+This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+
+The full text of the license can be found in the LICENSE file included with this module.
 
 =cut

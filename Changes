@@ -16,3 +16,6 @@ Revision history for HTML::SuperForm
      - Added Apache2::Request support for getting parameters
 1.06 - 2009-10-16
      - Added LICENSE file
+1.07 - 2009-10-17
+     - Changed LICENSE file to be the same license as perl
+     - Added COPYRIGHT section in documentation of HTML::SuperForm
