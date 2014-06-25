@@ -1,4 +1,4 @@
-package HTML::SuperForm::Field::Submit;
+package HTML::SuperForm::Field::Reset;
 
 use base 'HTML::SuperForm::Field';
 use strict;
@@ -11,14 +11,14 @@ sub init {
         if(exists($config->{default})) {
             $config->{label} = $config->{default};
         } else {
-            $config->{label} = "Submit Query";
+            $config->{label} = "Reset";
         }
     }
 }
 
 sub to_html {
     my $self = shift;
-    my $tag = '<input type="submit"';
+    my $tag = '<input type="reset"';
     $tag .= $self->attribute_str();
     $tag .= ' value="';
     $tag .= $self->label();
@@ -35,14 +35,14 @@ __END__
 
 =head1 NAME
 
-HTML::SuperForm::Field::Submit - Submit field used by HTML::SuperForm
+HTML::SuperForm::Field::Reset - Reset field used by HTML::SuperForm
 
 =head1 SYNOPSIS
 
- my $submit = HTML::SuperForm::Field::Submit->new( name => 'my_submit',
-                                                   default => 'Submit' );
+ my $reset = HTML::SuperForm::Field::Reset name => 'my_reset',
+                                           default => 'Reset' );
 
- print $submit;
+ print $reset;
 
 =head1 SEE ALSO
 

@@ -21,3 +21,5 @@ Revision history for HTML::SuperForm
      - Added COPYRIGHT section in documentation of HTML::SuperForm
 1.08 - 2009-10-19
      - Added LICENSE => 'perl' in Makefile.PL
+1.09 - 2009-10-20
+     - Applied mschout's patch to give support for a reset button
