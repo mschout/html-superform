@@ -4,9 +4,35 @@ use strict;
 use HTML::SuperForm::Field;
 use Carp;
 
-our $VERSION = '1.09_02';
+our $VERSION = '1.09_03';
 
-my %fields = map { $_ => 1 } qw(textarea text checkbox select radio checkbox_group radio_group password hidden submit reset);
+my %fields = map { $_ => 1 } qw(
+    checkbox
+    checkbox_group
+    color
+    date
+    datetime
+    datetime_local
+    email
+    hidden
+    month
+    number
+    password
+    radio
+    radio_group
+    range
+    reset
+    search
+    select
+    submit
+    tel
+    text
+    textarea
+    time
+    url
+    week
+);
+
 my %mutators    = map { $_ => 1 } qw(well_formed sticky fallback values_as_labels);
 my %accessors    = map { $_ => 1 } qw(field_object params);
 

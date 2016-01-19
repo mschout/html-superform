@@ -1,19 +1,37 @@
 Changes
-Makefile.PL
-MANIFEST
-README
-t/HTML-SuperForm.t
 lib/HTML/SuperForm.pm
+lib/HTML/SuperForm.pm.orig
 lib/HTML/SuperForm/Field.pm
 lib/HTML/SuperForm/Field/Checkbox.pm
 lib/HTML/SuperForm/Field/CheckboxGroup.pm
+lib/HTML/SuperForm/Field/Color.pm
+lib/HTML/SuperForm/Field/Date.pm
+lib/HTML/SuperForm/Field/Datetime.pm
+lib/HTML/SuperForm/Field/DatetimeLocal.pm
+lib/HTML/SuperForm/Field/Email.pm
 lib/HTML/SuperForm/Field/Hidden.pm
+lib/HTML/SuperForm/Field/HTML5.pm
+lib/HTML/SuperForm/Field/Month.pm
+lib/HTML/SuperForm/Field/Number.pm
 lib/HTML/SuperForm/Field/Password.pm
 lib/HTML/SuperForm/Field/Radio.pm
 lib/HTML/SuperForm/Field/RadioGroup.pm
+lib/HTML/SuperForm/Field/Range.pm
+lib/HTML/SuperForm/Field/Reset.pm
+lib/HTML/SuperForm/Field/Search.pm
 lib/HTML/SuperForm/Field/Select.pm
 lib/HTML/SuperForm/Field/Submit.pm
+lib/HTML/SuperForm/Field/Tel.pm
 lib/HTML/SuperForm/Field/Text.pm
 lib/HTML/SuperForm/Field/Textarea.pm
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
+lib/HTML/SuperForm/Field/Time.pm
+lib/HTML/SuperForm/Field/Url.pm
+lib/HTML/SuperForm/Field/Week.pm
+LICENSE
+Makefile.PL
+MANIFEST
+META.json			Module JSON meta-data (added by MakeMaker)
+META.yml			Module YAML meta-data (added by MakeMaker)
+README
+t/fields.t
+t/HTML-SuperForm.t
